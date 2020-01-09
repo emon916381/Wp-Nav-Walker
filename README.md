@@ -74,4 +74,56 @@ function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 
 ```     
 
-##### One more things this walker class made by targeting Bootstrap-4. If you working on bootstrap-4 menu you will use this code directly.
+##### One more things this walker class made by targeting Bootstrap-4. If you working on bootstrap-4 menu you will use this code directly. All step here...
+
+##### First include or paste this code your header.php or index.php file.
+
+```php
+<header class="header-area">
+	 <div class="header-section">
+	 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			 <div class="container">
+				<a href="#" class="navbar-brand"> EFT </a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	 				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<?php
+					$args= array(
+						'theme_location' 	=> 	'primary_menu',
+						'container'    		=> 	' ',
+						'menu_class'		=>	'navbar-nav nav justify-content-end menu_nav',
+						'walker'			=> 	new eft_Walker_Nav(),
+					);
+					 	wp_nav_menu( $args ); 
+					 ?>
+				</div>
+			 </div>
+		 </nav>
+	 </div>
+</header>
+```
+##### Second go this link and copy all code and paste your functions.php file https://github.com/emon916381/Wp-Nav-Walker/blob/master/Custom%20Nav%20Walker.php 
+
+####### Past this code your style.css file. It is not recommended but you can.
+```css
+.menu_nav{
+    width: 100%;
+}
+.sub_dropdown{
+   background-color:  #343a40;
+}
+@media (min-width: 768px){
+    .dropdown:hover> .dropdown-menu{
+        display: block;
+        margin-top: -2px;
+    }
+
+}
+
+ ```
+
+###### This file is open. If you developed this code better, email me. My E-mail Id: emon916381@gmail.com
+
+
+
