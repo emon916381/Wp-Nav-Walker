@@ -105,7 +105,7 @@ function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 ```
 ##### Second go this link and copy all code and paste your functions.php file https://github.com/emon916381/Wp-Nav-Walker/blob/master/Custom%20Nav%20Walker.php 
 
-####### Past this code your style.css file. It is not recommended but you can.
+####### Paste this code your style.css file. It is not recommended but you can.
 ```css
 .menu_nav{
     width: 100%;
